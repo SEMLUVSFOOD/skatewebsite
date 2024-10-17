@@ -1,0 +1,72 @@
+body {
+    position: relative;
+    background-image: url(../img/skate-pagebg-white02-xl.jpg.adapt.1920w.jpg);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+
+    /* Flex to list articles vertically */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+h1 {
+    color: #143d59;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.faq-item {
+    width: 40vw;
+    min-width: 350px;
+    margin-top: 1rem;
+    border: 5px solid #FCA00D;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+.faq-item:hover {
+    cursor: pointer;
+}
+.item-question {
+    background: #FCA00D;    
+    color: #fefefe;
+    font-size: 1rem;
+    padding: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.question-text {
+    display: inline-block;
+}
+.arrows-container {
+    margin: 0.4rem;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+.item-answer {
+    display: none;
+    color: whitesmoke;
+    padding: 2rem;
+    
+}
+.close {
+    display: none;
+}
+
+.show-answer .item-answer {
+    display: block;
+    background: #fefefe;
+    color: #0b0b0b;
+}
+
+.show-answer .close {
+    display: inline;
+}
+.show-answer .expand {
+    display: none;
+}

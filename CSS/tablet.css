@@ -1,0 +1,47 @@
+@media (min-width:600px) {
+    .subheader.show {
+        height: 290px;
+    }
+    .topelements {
+        display: flex;
+        flex-direction: column;
+    }
+    .topelements h1 {
+        text-align: center;
+
+    }
+    .filters {
+        justify-content: center;
+    }
+    .filters button {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .filters button:hover {
+        cursor: pointer;
+        filter: brightness(85%);
+    }
+    .button-with-cross::before {
+        top: 14px;
+    }
+    .posts {
+        flex-direction: unset;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .post {
+        margin: 20px;
+        width: 43vw;
+    }
+    .video {
+        width: auto;
+    }
+    .video iframe {
+        width: 40vw;
+        height: 22.5vw;
+    }
+    .poll label {
+        width: 40vw;
+    }
+    
+}

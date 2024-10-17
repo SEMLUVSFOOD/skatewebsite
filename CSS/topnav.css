@@ -1,0 +1,88 @@
+* {
+    margin: 0px;
+    font-family: 'Noto Sans Nandinagari', sans-serif;
+}
+.header {
+    width: 100%;
+    background-color: #0b0b0b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header a {
+    color: #fefefe;
+    font-size: 1vw;
+    margin: 15px;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+}
+.header a#hovereffecton::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #fca00d;
+    transition: width 0.3s ease-in-out;
+}
+.header a#hovereffecton:hover::after {
+    width: 100%;
+}
+
+.header img {
+    margin: 25px;
+}
+.header svg {
+    margin:25px;
+}
+
+
+.header button {
+    border: none;
+    background-color: #fca00d;
+    padding: 14px;
+    margin-right: 40px;
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1; /* Add this line */
+    cursor: pointer;
+}
+
+.header button::before {
+    content: '';
+    position: absolute;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transition: left 0.5s ease;
+    z-index: -1; /* Add this line */
+}
+
+.header button:hover::before {
+    left: 0;
+}
+
+.leftpart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+.rightpart {
+    float: right;
+}
+
+.headerdesktop {
+    display: none;
+}
+
+@media (max-width:1025px) {
+    .header img {
+        margin: 0px;
+    }
+}

@@ -1,0 +1,146 @@
+.topelements {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 3vh;
+    font-size: 20px;
+}
+
+.filters {
+    display: flex;
+    gap: 20px;
+    color: #fefefe;
+    align-items: center;
+}
+
+.filters button {
+    color: #fefefe;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 12px 5px 12px;
+    font-weight: 700;
+}
+
+.filters #official {
+    background-color: #fca00d;
+}
+
+.filters #community {
+    background-color: #16720e;
+}
+
+.filters #creator {
+    background-color: #3477f9;
+}
+.button-with-cross {
+    position: relative;
+  }
+  
+  .button-with-cross::before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 9px;
+    width: 16px;
+    height: 16px;
+    background-image: url('../img/round-cross.svg');
+    color: #fefefe;
+    background-size: cover;
+  }
+  
+
+
+
+.posts {
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-direction: column;
+}
+
+.post {
+    margin-top: 3vh;
+}
+
+.title {
+    color: #fefefe;
+    margin: 20px 0px 0px 15px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.title p {
+    font-size: 10px;
+    opacity: 0.8;
+}
+.video {
+    display: flex;
+    width: 94.75vw;
+    justify-content: center;
+    margin: 10px 0px 20px 0px;
+}
+.video iframe {
+    width: 320px;
+    height: 180px;
+    border-radius: 6px;
+}
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fefefe;
+    margin: 20px;
+}
+#officialpost {
+    background: linear-gradient(113.96deg, #FCA00D 0%, #292929 100%);    
+    border-radius: 6px;
+}
+#creatorpost {
+    background: linear-gradient(113.96deg, #3479FF 0%, #292929 100%);
+    border-radius: 6px;
+}
+#communitypost {
+    background: linear-gradient(113.96deg, rgba(9, 109, 0, 0.95) 0%, #292929 100%);
+    border-radius: 6px;
+}
+
+
+.poll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.poll label {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+    margin-bottom: 2vh;
+    width: 320px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    color: #fefefe;
+    font-size: 15px;
+    position: relative; /* Add position relative to the label */
+  }
+.poll label input {
+    margin: 0px 0px 0px 10px;
+}
+
+.poll label p {
+  margin: 5px 0px 0px 10px;
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 1000px;
+    background-color: #fefefe;
+    outline: none;
+    vertical-align: middle;
+  }
+input[type="radio"]:checked {
+    background-color: #eb9c5c;
+  }

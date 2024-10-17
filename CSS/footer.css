@@ -1,0 +1,37 @@
+body {
+  background-image: url(../img/skate-pagebg-white02-xl.jpg.adapt.1920w.png);
+}
+
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 40px 0px 40px 0px;
+    text-align: center;
+    margin-top: 3vh;
+    width: 100%;
+  }
+  
+  .footer p {
+    margin-bottom: 20px;
+  }
+  
+  .social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .social-icons li {
+    margin-right: 10px;
+  }
+  
+  .social-icons a {
+    color: white;
+    font-size: 24px;
+    display: flex;
+    text-decoration: none;
+  }
+
